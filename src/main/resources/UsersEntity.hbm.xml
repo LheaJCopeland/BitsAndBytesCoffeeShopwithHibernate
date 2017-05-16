@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.test.models.UsersEntity" table="users" schema="bitsandbytes">
+        <id name="userId">
+            <column name="UserID" sql-type="int(11)"/>
+        </id>
+        <property name="name">
+            <column name="Name" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="age">
+            <column name="Age" sql-type="int(11)"/>
+        </property>
+        <property name="favoriteDrink">
+            <column name="FavoriteDrink" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="favoritePastry">
+            <column name="FavoritePastry" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="allerties">
+            <column name="Allerties" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="time">
+            <column name="Time" sql-type="varchar(20)" length="20"/>
+        </property>
+    </class>
+</hibernate-mapping>
